@@ -34,8 +34,7 @@ namespace CourseLibrary.API
             
             services.AddDbContext<CourseLibraryContext>(options =>
             {
-                options.UseMySQL(
-                    "server=localhost;database=courseLibraryDb;user=solmei;password=solomon1");
+                options.UseMySql("server=localhost;database=CourseLibraryDb;user=solmei;password=solomon1");
             }); 
 
         }
